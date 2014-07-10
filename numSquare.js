@@ -8,9 +8,8 @@
 
 var squares = [];
 
-var numSquare = function() {
+var numSquare = function(maxNum) {
 
-	var maxNum = 100;
 	var maxSqR = Math.pow(maxNum, 0.5);
 
 	for( i=1; i <= maxSqR; i++ ) {
@@ -21,4 +20,4 @@ var numSquare = function() {
 	return squares;
 }
 
-console.log( numSquare() );
+console.log( numSquare(100) );
