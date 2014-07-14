@@ -16,8 +16,9 @@ var lettercount = function(word){
 	var myCount = {};
 
 	for (var i=0; i < string.length; i++) {
-
+		console.log('OUTER LOOP: ' + string[i])
 		for(var v = 0; v < string.length; v++){
+			console.log("inner loop: " + string[v])
 			if (string[i] === string[v]) {
 				count++;
 				myCount[string[i]] = count;
@@ -35,56 +36,43 @@ var lettercount = function(word){
 // Sample words typed in that awful way early 2000s teens did 
 // to test the lowercase counts
 
-console.log( lettercount("ApPle"));
-console.log( lettercount("MiSS IssipPi"));
-console.log( lettercount("crAzy S3cuRe pas5w0rDs"));
+console.log(lettercount("of"));
+// console.log( lettercount("ApPle"));
+// console.log( lettercount("MiSS IssipPi"));
+// console.log( lettercount("crAzy S3cuRe pas5w0rDs"));
 
 
 
 
 
+// Anil's In class solution
+// https://github.com/wdi-sf-july/js_functions_hw/blob/master/lettercount.js
 
+// var word = "mississippi";
 
+// var letterCount = function(letters) {
 
-// var word = "sassafrass"
-// var myObj = {};
-// var count = 0;
+//   var result = {}
 
-
-// for (var i=0; i<word.length; i++) {
-
-// for(var v=0; v<word.length; v++){
-// if (word[i] === word[v]) {
-// count++;
-// myObj[word[i]] = count;
-// }
-// }
-// count = 0;
-// }
-// console.log(myObj);
-
-
-
-
-
-
-
-
-// var myWord = 'apple';
-// var indexes = 'abcdefghijklmnopqrstuvwxyz'
-// var myArray = [];
-
-// var letterCount = function(word) {
-//   for (var i = 0; i < word.length; i += 1) {
-//     for (var j = 0; j < indexes.length; j += 1) {
-//       var counter = 0;
-//       if (myWord[i] === indexes[j]) {
-//         counter += 1;
-//         myArray.push(myWord[i] + ' - ' + counter);
-//       }
+//   for(var i = 0; i < letters.length; i++) {
+//   	var letter = letters[i];
+//     if (result[letter] !== undefined) {
+//       result[letter] += 1;
+//     } else 
+//       result[letter] = 1;
 //     }
+
 //   }
-//   console.log(myArray);
+
+//   return result;
 // }
 
-// letterCount(myWord);
+// console.log(letterCount(word));
+
+
+
+
+
+
+
+

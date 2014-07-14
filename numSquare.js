@@ -20,4 +20,4 @@ var numSquare = function(maxNum) {
 	return squares;
 }
 
-console.log( numSquare(100) );
+console.log( numSquare(4) );
